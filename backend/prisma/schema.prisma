@@ -1,9 +1,19 @@
 generator client {
     provider        = "prisma-client-js"
-    binaryTargets   = ["native", "devian-openssl-1.1.x", "debiam-openssl-3.0.x"]
+    binaryTargets   = ["native", "debian-openssl-1.1.x", "debian-openssl-3.0.x"]
 }
 
 datasource dn {
     provider    = "postgresql"
     url         = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
 }
