@@ -3,7 +3,7 @@ generator client {
     binaryTargets   = ["native", "debian-openssl-1.1.x", "debian-openssl-3.0.x"]
 }
 
-datasource dn {
+datasource db {
     provider    = "postgresql"
     url         = env("DATABASE_URL")
 }
@@ -16,4 +16,43 @@ model User {
   updatedAt DateTime @updatedAt
 
   @@map("users")
+}
+
+model Category {
+    id          Int     @id @default(autoincrement())
+    name        String  @unique
+    slug        String  @unique
+    image       String
+    products    Product[]
+
+    @@map("categories")
+}
+
+model Product {
+    id                  Int         @id @default(autoincrement())
+    name                String      @unique
+    brand               String?
+    type                String
+    weight              Int
+    flavour             String?
+    proteins            Float?
+    fats                Float?
+    omega3              Float?
+    calories            Float?
+    vuhl                Float?
+    tags                String[]
+    items               Int         @default(0)
+    cost                Decimal     @db.Decimal(10, 2)
+    discount            Int         @default(0)
+    description         String[]
+    information         String[]
+    color               String[]
+    images              String[]
+    createdAt           DateTime    @default(now())
+    updatedAt           DateTime    @updatedAt
+
+    categoryId  Int
+    category    Category    @relation(fields: [categoryId], references: [id])
+
+    @@map("products")
 }
