@@ -146,7 +146,7 @@ export const dessert: Products[] = [
   },
   {
     name: 'Carrot Cake',
-    categoryName: 'Desert',
+    categoryName: 'Dessert',
     type: 'Cake',
     weight: 500,
     proteins: 6.0,
