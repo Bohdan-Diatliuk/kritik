@@ -24,6 +24,11 @@ export class CreateProductDto {
   @IsNumber()
   @IsOptional()
   @Min(0)
+  volume?: number;
+
+  @IsNumber()
+  @IsOptional()
+  @Min(0)
   proteins?: number;
 
   @IsNumber()
@@ -44,14 +49,25 @@ export class CreateProductDto {
   @IsNumber()
   @IsOptional()
   @Min(0)
+  fiber?: number;
+
+  @IsNumber()
+  @IsOptional()
+  @Min(0)
   vuhl?: number;
+
+  @IsNumber()
+  @IsOptional()
+  @Min(0)
+  sugar?: number;
 
   @IsString()
   type: string;
 
   @IsNumber()
+  @IsOptional()
   @Min(1)
-  weight: number;
+  weight?: number;
 
   @IsString()
   @IsOptional()

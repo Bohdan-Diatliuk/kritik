@@ -1,0 +1,24 @@
+export type Products = {
+  name: string;
+  categoryName: string;
+  brand?: string;
+  volume?: number;
+  flavour?: string;
+  proteins?: number;
+  fats?: number;
+  omega3?: number;
+  calories?: number;
+  vuhl?: number;
+  fiber?: number;
+  sugar?: number;
+  type: string;
+  weight?: number;
+  tags: string[];
+  items: number;
+  cost: number;
+  discount: number;
+  description: string[];
+  information: string[];
+  color: string[];
+  images: string[];
+};
