@@ -13,8 +13,7 @@ export const vegetables: Products[] = [
     calories: 18,
     tags: ['Tomato', 'Fresh', 'Salad'],
     items: 100,
-    cost: 3.5,
-    discount: 2.9,
+    cost: 13.5,
     description: [
       'Fresh and juicy tomatoes perfect for salads, sauces or everyday cooking.',
     ],
@@ -36,8 +35,7 @@ export const vegetables: Products[] = [
     calories: 16,
     tags: ['Cucumber', 'Fresh', 'Hydrating'],
     items: 120,
-    cost: 2.8,
-    discount: 2.3,
+    cost: 8.8,
     description: [
       'Crisp and refreshing cucumbers, ideal for salads or light snacks.',
     ],
@@ -50,7 +48,6 @@ export const vegetables: Products[] = [
   {
     name: 'Carrots',
     categoryName: 'Vegetables',
-    brand: 'Без ТМ',
     type: 'Vegetable',
     weight: 100,
     proteins: 0.9,
@@ -60,8 +57,7 @@ export const vegetables: Products[] = [
     calories: 41,
     tags: ['Carrot', 'Root', 'Healthy'],
     items: 90,
-    cost: 2.2,
-    discount: 1.8,
+    cost: 12.2,
     description: [
       'Sweet and crunchy carrots, great for cooking, salads or fresh snacks.',
     ],
@@ -83,8 +79,7 @@ export const vegetables: Products[] = [
     calories: 34,
     tags: ['Broccoli', 'Green', 'Healthy'],
     items: 70,
-    cost: 4.5,
-    discount: 3.9,
+    cost: 14.5,
     description: [
       'Nutritious broccoli rich in vitamins and fiber. Perfect for steaming, baking or stir-fry.',
     ],
@@ -106,8 +101,7 @@ export const vegetables: Products[] = [
     calories: 77,
     tags: ['Potato', 'Root', 'Staple'],
     items: 200,
-    cost: 1.5,
-    discount: 1.2,
+    cost: 8.5,
     description: [
       'Versatile potatoes suitable for boiling, frying, baking or mashing.',
     ],
@@ -175,8 +169,7 @@ export const vegetables: Products[] = [
     calories: 149,
     tags: ['Garlic', 'Spice', 'Strong'],
     items: 60,
-    cost: 3.0,
-    discount: 2.5,
+    cost: 13.0,
     description: [
       'Aromatic garlic used to enhance flavor in various dishes. Strong and distinctive taste.',
     ],
@@ -212,7 +205,6 @@ export const vegetables: Products[] = [
   {
     name: 'Eggplant',
     categoryName: 'Vegetables',
-    brand: 'Без ТМ',
     type: 'Vegetable',
     weight: 100,
     proteins: 1.0,
@@ -268,8 +260,7 @@ export const vegetables: Products[] = [
     calories: 43,
     tags: ['Beetroot', 'Root', 'Healthy'],
     items: 70,
-    cost: 2.4,
-    discount: 2.0,
+    cost: 12.4,
     description: [
       'Sweet and earthy beetroot, great for salads, soups or baking.',
     ],
@@ -315,7 +306,6 @@ export const vegetables: Products[] = [
     tags: ['Beans', 'Green', 'Healthy'],
     items: 65,
     cost: 5.0,
-    discount: 4.3,
     description: [
       'Fresh green beans perfect for steaming, frying or side dishes.',
     ],
@@ -337,8 +327,7 @@ export const vegetables: Products[] = [
     calories: 15,
     tags: ['Lettuce', 'Greens', 'Salad'],
     items: 80,
-    cost: 2.9,
-    discount: 2.4,
+    cost: 12.9,
     description: [
       'Crisp lettuce leaves ideal for salads, sandwiches or light meals.',
     ],
@@ -360,8 +349,7 @@ export const vegetables: Products[] = [
     calories: 31,
     tags: ['Cabbage', 'Red', 'Salad'],
     items: 60,
-    cost: 2.7,
-    discount: 2.2,
+    cost: 12.7,
     description: [
       'Crunchy red cabbage perfect for salads, slaws and healthy dishes.',
     ],
@@ -383,8 +371,8 @@ export const vegetables: Products[] = [
     calories: 22,
     tags: ['Mushroom', 'Champignon', 'Cooking'],
     items: 75,
-    cost: 4.8,
-    discount: 4.1,
+    cost: 14.8,
+    discount: 14.1,
     description: [
       'Fresh champignon mushrooms ideal for frying, soups or sauces.',
     ],
@@ -406,8 +394,8 @@ export const vegetables: Products[] = [
     calories: 40,
     tags: ['Chili', 'Spicy', 'Hot'],
     items: 50,
-    cost: 5.5,
-    discount: 4.7,
+    cost: 15.5,
+    discount: 14.7,
     description: ['Hot chili peppers for adding spice and flavor to dishes.'],
     information: ['Spicy', 'Rich flavor', 'Stimulates appetite'],
     color: ['#FF2400'],
@@ -427,8 +415,7 @@ export const vegetables: Products[] = [
     calories: 16,
     tags: ['Celery', 'Fresh', 'Diet'],
     items: 65,
-    cost: 3.3,
-    discount: 2.8,
+    cost: 13.3,
     description: [
       'Crunchy celery with a fresh taste, ideal for salads, soups or healthy snacks.',
     ],
@@ -450,8 +437,7 @@ export const vegetables: Products[] = [
     calories: 36,
     tags: ['Parsley', 'Greens', 'Herbs'],
     items: 40,
-    cost: 2.5,
-    discount: 2.1,
+    cost: 8.5,
     description: [
       'Fresh parsley used as a garnish or ingredient to enhance flavor.',
     ],

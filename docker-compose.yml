@@ -35,7 +35,23 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-
+  prisma-studio:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: development
+    container_name: prisma_studio_cont
+    command: npx prisma studio --port 5555 --browser none
+    environment:
+      DATABASE_URL: "postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-kritik_dev}?schema=public"
+    ports:
+      - '5555:5555'
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    depends_on:
+      postgres:
+        condition: service_healthy
   frontend:
     build:
       context: ./frontend
