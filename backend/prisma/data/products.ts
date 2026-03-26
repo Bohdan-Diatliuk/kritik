@@ -5,7 +5,6 @@ import { fish } from './products/fish';
 import { fruits } from './products/fruits';
 import { mainDish } from './products/mainDish';
 import { meat } from './products/meat';
-import { readyMeals } from './products/readyMeals';
 import { vegetables } from './products/vegetables';
 
 export const products = [
@@ -16,6 +15,5 @@ export const products = [
   ...bakery,
   ...drinks,
   ...dessert,
-  ...readyMeals,
   ...mainDish,
 ];

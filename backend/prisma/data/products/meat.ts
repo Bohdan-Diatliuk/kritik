@@ -100,8 +100,7 @@ export const meat: Products[] = [
     calories: 110,
     tags: ['Turkey', 'Fillet', 'Diet'],
     items: 45,
-    cost: 18.2,
-    discount: 15.7,
+    cost: 18,
     description: [
       'Lean and healthy turkey fillet with a mild flavor. Ideal for dietary meals, baking, steaming or grilling. A great alternative to chicken.',
     ],
@@ -122,8 +121,7 @@ export const meat: Products[] = [
     calories: 220,
     tags: ['Chicken', 'Wings', 'Snack'],
     items: 60,
-    cost: 10.9,
-    discount: 9.5,
+    cost: 50,
     description: [
       'Flavorful chicken wings perfect for frying or baking with sauces. Great for parties, snacks or casual meals.',
     ],
@@ -144,8 +142,7 @@ export const meat: Products[] = [
     calories: 280,
     tags: ['Pork', 'Ribs', 'BBQ'],
     items: 30,
-    cost: 12.9,
-    discount: 10.9,
+    cost: 42.9,
     description: [
       'Juicy pork ribs ideal for grilling, baking or slow cooking. Perfect for BBQ lovers with a rich and tender taste.',
     ],
@@ -188,8 +185,8 @@ export const meat: Products[] = [
     calories: 180,
     tags: ['Chicken', 'Drumsticks', 'Roast'],
     items: 55,
-    cost: 9.9,
-    discount: 8.7,
+    cost: 19.9,
+    discount: 18.7,
     description: [
       'Tender chicken drumsticks perfect for baking or frying. Crispy outside and juicy inside.',
     ],
@@ -210,8 +207,7 @@ export const meat: Products[] = [
     calories: 170,
     tags: ['Veal', 'Tenderloin', 'Premium'],
     items: 20,
-    cost: 24.9,
-    discount: 21.5,
+    cost: 44.9,
     description: [
       'Delicate veal tenderloin with a soft texture and mild flavor. Ideal for gourmet dishes and fine dining.',
     ],
@@ -232,8 +228,7 @@ export const meat: Products[] = [
     calories: 400,
     tags: ['Bacon', 'Smoked', 'Snack'],
     items: 45,
-    cost: 13.5,
-    discount: 11.8,
+    cost: 23.5,
     description: [
       'Crispy smoked bacon with a rich aroma. Perfect for breakfast, burgers, or adding flavor to dishes.',
     ],
@@ -254,8 +249,7 @@ export const meat: Products[] = [
     calories: 240,
     tags: ['Chicken', 'Sausage', 'Quick meal'],
     items: 60,
-    cost: 8.9,
-    discount: 7.5,
+    cost: 28.9,
     description: [
       'Delicious chicken sausages ready for quick meals. Great for frying, grilling or boiling.',
     ],
@@ -298,8 +292,7 @@ export const meat: Products[] = [
     calories: 320,
     tags: ['Pork', 'Sausage', 'Grill'],
     items: 50,
-    cost: 9.5,
-    discount: 8.2,
+    cost: 39.5,
     description: [
       'Traditional pork sausages perfect for grilling or frying. Rich taste and satisfying texture.',
     ],
@@ -320,8 +313,7 @@ export const meat: Products[] = [
     calories: 140,
     tags: ['Chicken', 'Liver', 'Healthy'],
     items: 35,
-    cost: 6.9,
-    discount: 5.8,
+    cost: 26.9,
     description: [
       'Nutritious chicken liver, rich in vitamins and minerals. Suitable for frying, pâtés or home-cooked meals.',
     ],

@@ -91,7 +91,8 @@ export class CreateProductDto {
 
   @IsNumber()
   @Min(0)
-  discount: number;
+  @IsOptional()
+  discount?: number;
 
   @IsArray()
   @IsString({ each: true })

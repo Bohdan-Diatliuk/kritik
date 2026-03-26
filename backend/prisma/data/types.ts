@@ -16,7 +16,7 @@ export type Products = {
   tags: string[];
   items: number;
   cost: number;
-  discount: number;
+  discount?: number;
   description: string[];
   information: string[];
   color: string[];
