@@ -7,21 +7,51 @@ import { UpdateProductDto } from './dto/update-product.dto';
 export class ProductsService {
   constructor(private readonly prisma: PrismaService) {}
 
-  findAll() {
-    return this.prisma.product.findMany({
-      include: { category: true },
-    });
+  async findAll(page = 1, limit = 20, category?: string) {
+    const safePage = Math.max(page, 1);
+    const safeLimit = Math.min(Math.max(limit, 1), 50);
+    const where = category ? { category: { name: category } } : {};
+
+    const [products, total] = await Promise.all([
+      this.prisma.product.findMany({
+        where,
+        include: { category: true, reviews: { select: { rating: true } } },
+        skip: (safePage - 1) * safeLimit,
+        take: safeLimit,
+      }),
+      this.prisma.product.count({ where }),
+    ]);
+
+    return {
+      data: products.map((product: (typeof products)[number]) =>
+        this.withRatingSummary(product),
+      ),
+      total,
+      page: safePage,
+      limit: safeLimit,
+    };
   }
 
   async findOne(id: number) {
     const product = await this.prisma.product.findUnique({
       where: { id },
-      include: { category: true },
+      include: { category: true, reviews: { select: { rating: true } } },
     });
     if (!product) {
       throw new NotFoundException(`Product #${id} not found`);
     }
-    return product;
+    return this.withRatingSummary(product);
+  }
+
+  private withRatingSummary<T extends { reviews: { rating: number }[] }>(
+    product: T,
+  ) {
+    const { reviews, ...rest } = product;
+    const reviewsCount = reviews.length;
+    const averageRating = reviewsCount
+      ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviewsCount
+      : null;
+    return { ...rest, averageRating, reviewsCount };
   }
 
   async create(dto: CreateProductDto) {

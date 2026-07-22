@@ -106,6 +106,11 @@ export class CreateProductDto {
   @IsString({ each: true })
   color: string[];
 
+  @IsArray()
+  @IsString({ each: true })
+  @IsOptional()
+  images?: string[];
+
   @IsNumber()
   categoryId: number;
 }
