@@ -8,16 +8,30 @@
     --color-main-cart: var(--main-cart);
     --color-price-cart: var(--price-cart);
     --color-star-cart: var(--star-cart);
+    --color-canvas: var(--canvas);
+    --color-fresh: var(--fresh);
+    --color-line: var(--line);
+
+    --font-display: var(--font-display);
+    --font-sans: var(--font-sans);
 }
 
 :root {
-    --main-text: #000000;
-    --anti-text: #fff;
-    --second-text: #221F1F;
-    --third-text: #7A7A7A;
-    --main-cart: #2B2B2D;
-    --price-cart: #F53E32;
-    --star-cart: #F5885F;
+    --main-text: #1c1917;
+    --anti-text: #1c1917;
+    --second-text: #443f3a;
+    --third-text: #8a8478;
+
+    --canvas: #f4f6f2;
+    --main-cart: #ffffff;
+    --line: #e3e6dd;
+
+    --price-cart: #d6432a;
+    --fresh: #3f6b4a;
+    --star-cart: #d98a2b;
+
+    --font-display: 'Bricolage Grotesque', ui-sans-serif, sans-serif;
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
 }
 
 .dark {
@@ -26,6 +40,11 @@
     --second-text: ;
     --third-text: ;
     --main-cart: ;
-    --price-cart: ;
-    --start-cart: ;
+    --star-cart: ;
+}
+
+body {
+    background-color: var(--canvas);
+    color: var(--main-text);
+    font-family: var(--font-sans);
 }
